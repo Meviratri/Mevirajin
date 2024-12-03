@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Section */
+header {
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+  background: #35424a;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.hobby-list,
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hobby,
+.project {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+/* Gambar */
+img {
+  display: block; /* Agar gambar tidak mengalir ke samping teks */
+  max-width: 100%; /* Memastikan gambar tidak melebihi ukuran kontainer */
+  height: auto; /* Menjaga proporsi gambar */
+  margin: 10px auto; /* Memberikan jarak di sekeliling gambar */
+  border-radius: 10px; /* Menambahkan efek sudut melengkung jika diperlukan */
+}
+
+/* Formulir Kontak */
+form {
+  display: flex;
+  flex-direction: column; /* Mengatur elemen input menjadi kolom */
+  align-items: center; /* Menjadikan form di tengah */
+  max-width: 500px; /* Membatasi lebar form */
+  margin: 20px auto; /* Memusatkan form */
+  padding: 20px; /* Memberikan jarak di dalam form */
+  border: 1px solid #ccc; /* Menambahkan border ringan */
+  border-radius: 10px; /* Membuat sudut melengkung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+  background: #f9f9f9; /* Memberikan warna latar belakang ringan */
+}
+
+input,
+textarea,
+button {
+  width: 100%; /* Membuat elemen form mengambil seluruh lebar */
+  padding: 10px; /* Memberikan jarak di dalam input */
+  margin: 10px 0; /* Memberikan jarak antar elemen */
+  border: 1px solid #ccc; /* Menambahkan border ringan */
+  border-radius: 5px; /* Membuat sudut melengkung */
+  box-sizing: border-box; /* Menghindari masalah padding */
+  font-size: 16px; /* Menjadikan teks lebih mudah dibaca */
+}
+
+button {
+  background-color: #007bff; /* Warna tombol */
+  color: white; /* Warna teks */
+  border: none; /* Menghilangkan border */
+  cursor: pointer; /* Menambahkan pointer */
+  transition: background-color 0.3s; /* Efek transisi */
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna saat hover */
+}
+
+/* Kontainer Umum */
+.container {
+  max-width: 1200px; /* Membatasi lebar konten utama */
+  margin: 0 auto; /* Memusatkan kontainer */
+  padding: 20px; /* Memberikan jarak di sekeliling kontainer */
+}
+
+/* Gambar Profil */
+.profile-img {
+  width: 150px; /* Atur ukuran lebar gambar */
+  height: 150px; /* Atur ukuran tinggi gambar */
+  object-fit: cover; /* Memastikan gambar tetap proporsional */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  margin: 20px auto; /* Memberikan jarak dan memusatkan gambar */
+  display: block; /* Memastikan gambar menjadi elemen blok */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk estetika */
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 100px; /* Gambar lebih kecil untuk layar kecil */
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 80px; /* Gambar lebih kecil untuk layar sangat kecil */
+    height: 80px;
+  }
+}
+
+/* Grid */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Object-Fit */
+.project-img {
+  width: 100%; /* Gambar akan memenuhi lebar grid */
+  height: 200px; /* Tetapkan tinggi tetap */
+  object-fit: cover; /* Memotong bagian yang berlebih sambil menjaga proporsi */
+  border-radius: 8px; /* Opsional: memberikan sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: menambahkan bayangan */
+}
+
+/* Tata Letak Grid Projects */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsif */
+  gap: 20px; /* Jarak antar grid */
+  padding: 40px;
+  justify-items: center;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 300px; /* Membatasi ukuran maksimal kartu */
+  text-align: center; /* Memusatkan konten */
+}
+
+/* Responsivitas dengan Media Query */
+@media (max-width: 768px) {
+  .project-img {
+    height: 150px; /* Sesuaikan tinggi untuk layar lebih kecil */
+  }
+}
+
+/* Learn More */
+.btn-learn-more {
+  display: inline-block; /* Pastikan tombol ditampilkan sebagai kotak */
+  padding: 8px 16px; /* Atur ukuran padding untuk memperkecil kotak */
+  font-size: 14px; /* Kurangi ukuran font untuk teks lebih kecil */
+  border: 2px solid #fff; /* Garis tepi tetap proporsional */
+  border-radius: 5px; /* Berikan sudut yang lebih kecil */
+  color: #fff; /* Warna teks */
+  background-color: transparent; /* Warna latar */
+  text-decoration: none; /* Hilangkan garis bawah */
+  transition: all 0.3s ease; /* Tambahkan animasi */
+}
+
+.btn-learn-more:hover {
+  background-color: #fff; /* Warna latar saat hover */
+  color: #000; /* Warna teks saat hover */
+}
+
+/* Learn More Responsive */
+@media (max-width: 768px) {
+  .btn-learn-more {
+    font-size: 12px; /* Ukuran font lebih kecil untuk layar kecil */
+    padding: 6px 12px; /* Padding lebih kecil */
+  }
+}
